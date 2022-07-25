@@ -1,5 +1,5 @@
 // MIRCHAAAA
-/*
+
 for (var i = 0; i < 10; i++) {
     console.log(i)
 }
@@ -47,7 +47,7 @@ for (const iterator of nume) {
     
 }
 
-*/
+
 
 /**
  * Foreach en JavaScript
@@ -72,7 +72,7 @@ for (const iterator of nume) {
 
 
 
-/*
+
 // Segundo ejemplo recibiendo el índice, igualmente con una función con nombre
 const funcionQueRecorreConIndice = function(cancion, indice) {
 
@@ -122,4 +122,4 @@ const personas = [{
 ];
 personas.forEach(persona => {
     console.log("Nombre: %s, edad: %d", persona.nombre, persona.edad);
-});*/
+});

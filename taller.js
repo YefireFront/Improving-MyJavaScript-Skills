@@ -2,14 +2,14 @@
 //  devolverá 10.
 
 // En una Sola Linea
-// const contarC =(s="")=>(!s)?console.warn("No le metiste nada Che"):console.log(`La cadena ${s} tiene ${s.length}`)
+const contarL1 =(s="")=>(!s)?console.warn("No le metiste nada Che"):console.log(`La cadena ${s} tiene ${s.length}`)
 
-// const contarC =(s="")=>
-// (!s)
-// ?console.warn("No le metiste nada Che")
-// :console.log(`La cadena ${s} tiene ${s.length}`)
+const contarC =(s="")=>
+(!s)
+?console.warn("No le metiste nada Che")
+:console.log(`La cadena ${s} tiene ${s.length}`)
 
-// contarC('Vamo Carayooo')
+contarC('Vamo Carayooo')
 
 
 x
@@ -19,19 +19,19 @@ x
 // indicados, pe. miFuncion("Hola Mundo", 4) devolverá "Hola".
 
 
-// const cortarCadena = (s="", l=undefined)=> 
-// (!s)
-// ?console.warn("No le metiste nada Che")
-// :(l === undefined)
-// ?console.warn("No le metiste nada a cortar Che")
-// :(l > 5)
-// ?console.warn(`Esa mierda de ${l} esta muy largo chee`)
-// :console.log(s.slice(0,l))
+const cortarCadena = (s="", l=undefined)=> 
+(!s)
+?console.warn("No le metiste nada Che")
+:(l === undefined)
+?console.warn("No le metiste nada a cortar Che")
+:(l > 5)
+?console.warn(`Esa mierda de ${l} esta muy largo chee`)
+:console.log(s.slice(0,l))
 
 
-// cortarCadena('Yeffer Moreno Robledo ')
-// cortarCadena('Yeffer Moreno Robledo ',5)
-// cortarCadena('Yeffer Moreno Robledo ',15)
+cortarCadena('Yeffer Moreno Robledo ')
+cortarCadena('Yeffer Moreno Robledo ',5)
+cortarCadena('Yeffer Moreno Robledo ',15)
 
 
 
@@ -47,14 +47,14 @@ x
 
 
 
-// const cortarCadena = (s="", l=undefined)=> 
-// (!s)
-// ?console.warn("No le metiste nada Che")
-// :(l === undefined)
-// ?console.warn("No le metiste nada a cortar Che")
-// :console.log(s.split(l))
+const cortarCadena2 = (s="", l=undefined)=> 
+(!s)
+?console.warn("No le metiste nada Che")
+:(l === undefined)
+?console.warn("No le metiste nada a cortar Che")
+:console.log(s.split(l))
 
-// cortarCadena('vamo boca carajo que hoy gabnamos ', 'a')
+cortarCadena('vamo boca carajo que hoy gabnamos ', 'a')
 
 
 
@@ -67,17 +67,17 @@ x
 // devolverá Hola Mundo Hola Mundo Hola Mundo.
 
 
-// const xveces =(c,v)=>{
+const xveces =(c,v)=>{
 
-//     for(let i =0; i<v; i++){
-//         console.log(c)
+    for(let i =0; i<v; i++){
+        console.log(c)
 
-//     }
+    }
 
-// }
+}
 
 
-// xveces('Vamo Carajo',10)
+xveces('Vamo Carajo',10)
 
 
 
@@ -87,16 +87,16 @@ x
 // // 5) Programa una función que invierta las palabras de una cadena de texto, pe.
 //  miFuncion("Hola Mundo") devolverá "odnuM aloH".
 
-// const xreverce =(c)=>{
-//     let a =c.split("")
-//     // console.log(a)
-//     a.reverse()
-//     // console.log(a)
-//     let b = a.join("")
-//     console.log(b)
-// }
+const xreverce =(c)=>{
+    let a =c.split("")
+    // console.log(a)
+    a.reverse()
+    // console.log(a)
+    let b = a.join("")
+    console.log(b)
+}
 
-// xreverce('Te Amo Flaca')
+xreverce('Te Amo Flaca')
 
 
 
@@ -106,23 +106,23 @@ x
 //  pe. miFuncion("hola mundo adios mundo", "mundo") devolverá 2.
 
 
-// const npalabras =(frase,w)=>{
-//     let con = 0;
-//     let arr = frase.split(" ")
-//     for(i=0; i <= arr.length; i++){
+const npalabras =(frase,w)=>{
+    let con = 0;
+    let arr = frase.split(" ")
+    for(i=0; i <= arr.length; i++){
         
-//         if(w == arr[i]){
-//              con++;
-//         }
+        if(w == arr[i]){
+             con++;
+        }
 
 
-//     }
+    }
 
-//     console.warn(`la Frase ${frase} tiene ${con} veces la palabra ${w}`)
+    console.warn(`la Frase ${frase} tiene ${con} veces la palabra ${w}`)
 
-// }
+}
 
-// npalabras('Yeffer es un crack de medio tiempo en su casa en donde sea en mi vida','en')
+npalabras('Yeffer es un crack de medio tiempo en su casa en donde sea en mi vida','en')
 
 
 
@@ -134,25 +134,25 @@ x
 //  pe. mifuncion("Salas") devolverá true.
 
 
-// const xreverce =(c)=>{
-//     let a =c.split("")
-//     // console.log(a)
-//     a.reverse()
-//     // console.log(a)
-//     let b = a.join("")
-//     // console.log(b)
+const xreverce2 =(c)=>{
+    let a =c.split("")
+    // console.log(a)
+    a.reverse()
+    // console.log(a)
+    let b = a.join("")
+    // console.log(b)
 
-//     if(c===b){
-//         console.log(`la palabra ${c} es palindroma ya que alreves es $${b}`)
+    if(c===b){
+        console.log(`la palabra ${c} es palindroma ya que alreves es $${b}`)
         
-//     }else{
-//         console.log(`la palabra ${c} no es palindroma ya que alreves es ${b}`)
+    }else{
+        console.log(`la palabra ${c} no es palindroma ya que alreves es ${b}`)
         
 
-//     }
-// }
+    }
+}
 
-// xreverce('reconocer')
+xreverce('reconocer')
 
 
 
@@ -169,22 +169,22 @@ x
 // // 8) Programa una función que elimine cierto patrón de caracteres de un texto dado,
 //  pe. miFuncion("xyz1, xyz2, xyz3, xyz4 y xyz5", "xyz") devolverá  "1, 2, 3, 4 y 5.
 
-// const patron=(text,keys)=>{
-//     let a = text.split(keys)
-//     a.join()
+const patron=(text,keys)=>{
+    let a = text.split(keys)
+    a.join()
 
-//     console.log(a)
+    console.log(a)
     
-// }
+}
 
-// patron('xyz1, xyz2, xyz3, xyz4 y xyz5','xyz')
+patron('xyz1, xyz2, xyz3, xyz4 y xyz5','xyz')
 
 
 
 // // 9) Programa una función que obtenga un numero aleatorio entre 501 y 600.
 
-// const aleatorio=(min,max)=> Math.floor(Math.random()*(max -min)) + min;
-// console.log(aleatorio(500,600))
+const aleatorio=(min,max)=> Math.floor(Math.random()*(max -min)) + min;
+console.log(aleatorio(500,600))
 
 
 
@@ -192,20 +192,20 @@ x
 // // 10) Programa una función que reciba un número y evalúe si es capicúa o no (que se lee igual en un sentido que en otro), 
 // pe. miFuncion(2002) devolverá true.
 
-// const capi =(n=0)=>{
-//     if(!n)return console.log('No ingresaste un numero');
-//     if(typeof n!=="number")return console.log('No es un numero');
+const capi =(n=0)=>{
+    if(!n)return console.log('No ingresaste un numero');
+    if(typeof n!=="number")return console.log('No es un numero');
 
-//     numero = n.toString()
-//     let reves = numero.split('').reverse().join('')
-//     console.log(reves)
+    numero = n.toString()
+    let reves = numero.split('').reverse().join('')
+    console.log(reves)
 
 
   
 
-// }
+}
 
-// capi(205)
+capi(205)
 
     
 
@@ -244,48 +244,48 @@ x
 // // 12) Programa una función que determine si un número es primo (aquel que solo es divisible por sí mismo y 1)
 //  o no, pe. miFuncion(7) devolverá true.
 
-// const nprimo = (n)=>{
-//     if(!n)return console.log('No ingresaste un numero');
-//     if(typeof n!=="number")return console.log('No es un numero');
-//     if(n%n == 0 && n%1 == 0){
-//         console.log(true)
-//     }else{
-//         console.log(false)
-//     }
-// }  
-// nprimo(7)
-// nprimo()
-// nprimo(5)
+const nprimo = (n)=>{
+    if(!n)return console.log('No ingresaste un numero');
+    if(typeof n!=="number")return console.log('No es un numero');
+    if(n%n == 0 && n%1 == 0){
+        console.log(true)
+    }else{
+        console.log(false)
+    }
+}  
+nprimo(7)
+nprimo()
+nprimo(5)
 
 
 
 // // 13) Programa una función que determine si un número es par o impar, 
 // pe. miFuncion(29) devolverá Impar.
 
-    // const par = n => n%2==0 ?console.log(`Es par`):console.warn(`No es par`)
+    const par = n => n%2==0 ?console.log(`Es par`):console.warn(`No es par`)
 
-    // par(5)
-    // par(2)
-    // par(25)
+    par(5)
+    par(2)
+    par(25)
 
 
 
 // // 14) Programa una función para convertir grados Celsius a Fahrenheit y viceversa,
 //  pe. miFuncion(0,"C") devolverá 32°F.
 
-        // const tempe = (N,T)=>{
-        //     let R = 0
-        //     if(T == 'C'){
-        //         R = (N * 1.8) + 32
-        //     }else if(T == 'F'){
-        //         R = (N - 32)/1.8 
-        //     }
+        const tempe = (N,T)=>{
+            let R = 0
+            if(T == 'C'){
+                R = (N * 1.8) + 32
+            }else if(T == 'F'){
+                R = (N - 32)/1.8 
+            }
 
-        //    console.log(R)
+           console.log(R)
 
-        // }
+        }
 
-        // tempe(10,'F')
+        tempe(10,'F')
 
 
 //         15) Programa una función para convertir números de base binaria a decimal y viceversa, 
@@ -323,18 +323,18 @@ x
 
 
 
-    // const descu = (m,d)=>{
-    //     let r = 0 
-    //     let f = 0
+    const descu = (m,d)=>{
+        let r = 0 
+        let f = 0
 
-    //     r = (m * d) / 100 
-    //     console.log(r)
-    //     f = m - r
-    //     console.log(`Se agrego un decuento del ${d}% a ${m} para un total de ${f}`)
+        r = (m * d) / 100 
+        console.log(r)
+        f = m - r
+        console.log(`Se agrego un decuento del ${d}% a ${m} para un total de ${f}`)
 
-    // }
+    }
 
-    // descu(1000,20)
+    descu(1000,20)
 
 
 
@@ -363,47 +363,47 @@ x
 
 
 
-// const  voco = (cadena) => {
-//     arr = [...cadena]
-//     console.log(arr)
-//     const vocales = ['a','e','i','o','u']
-//     const consonantes = ['b','c','d','f','g','h','j','k','l','m','n','p','q','r','s','t','v','w','x','y','z']
-//     let V = 0;
-//     let C = 0;
-//     let QV=[]
-//     let QC=[]
+const  voco = (cadena) => {
+    arr = [...cadena]
+    console.log(arr)
+    const vocales = ['a','e','i','o','u']
+    const consonantes = ['b','c','d','f','g','h','j','k','l','m','n','p','q','r','s','t','v','w','x','y','z']
+    let V = 0;
+    let C = 0;
+    let QV=[]
+    let QC=[]
 
-//     arr.forEach(element => {
+    arr.forEach(element => {
 
-//         vocales.forEach(item => {
-//             if (item == element) {
-//                 QV.push(element)
-//                 V ++
-//             }
-//         })
+        vocales.forEach(item => {
+            if (item == element) {
+                QV.push(element)
+                V ++
+            }
+        })
 
-//         consonantes.forEach(items => {
-//             if(items == element) {
-//                 QC.push(element)
-//                 C++;
-//             }
-//         })
+        consonantes.forEach(items => {
+            if(items == element) {
+                QC.push(element)
+                C++;
+            }
+        })
         
-//     });
+    });
 
     
-//     console.log(V)
-//     console.log('Que vocales',QV)
-//     console.log(C)
-//     console.log('Que vocales',QC)
+    console.log(V)
+    console.log('Que vocales',QV)
+    console.log(C)
+    console.log('Que vocales',QC)
 
 
     
     
 
-// }
+ }
 
-// voco('yeffer')
+voco('yeffer')
 
 
 
@@ -470,20 +470,20 @@ x
 //  pe. mi_funcion([1, 4, 5]) devolverá [1, 16, 25].
 
 
-    // const elevar = (n)=>{
+    const elevar = (n)=>{
 
-    //     let nevete = []
+        let nevete = []
 
         
-    //     n.forEach(items=>{
-    //        nevete.push(items*items)
-    //     })
-    //     console.log(nevete)
+        n.forEach(items=>{
+           nevete.push(items*items)
+        })
+        console.log(nevete)
 
-    // }
+    }
 
 
-    // elevar([2,4,5]) 
+    elevar([2,4,5]) 
 
 
 
@@ -519,29 +519,29 @@ x
 
 
 
-// const mm = (n) => {
-//     let menor =n[0];
-//     let mayor =n[0];
+const mm = (n) => {
+    let menor =n[0];
+    let mayor =n[0];
 
 
-//     n.forEach(items=>{
+    n.forEach(items=>{
 
-//         if(items>mayor){
-//             mayor = items;
-//         }
+        if(items>mayor){
+            mayor = items;
+        }
 
-//         if(items<menor){
-//             menor= items
-//         }
-//     })
+        if(items<menor){
+            menor= items
+        }
+    })
 
-//     console.warn(mayor,menor)
-
-
-// }
+    console.warn(mayor,menor)
 
 
-// mm([2,56,2,4,85,12,-24,2,90,-66])
+}
+
+
+mm([2,56,2,4,85,12,-24,2,90,-66])
 
 
 
@@ -569,28 +569,28 @@ x
 //  en el primero almacena los números pares y en el segundo los impares, 
 //  pe. miFuncion([1,2,3,4,5,6,7,8,9,0]) devolverá {pares: [2,4,6,8,0], impares: [1,3,5,7,9]}.
 
-// let p={pares:[]}
-// let i={impares:[]}
+let p={pares:[]}
+let i={impares:[]}
 
-// const obj =(n)=>{
+const obj =(n)=>{
 
-//     n.forEach(items=>{
-//         if(items % 2 ==0){
-//             p.pares.push(items)
-//         }
-//         if (items % 2 != 0){
-//             i.impares.push(items)
-//         }
-//     })
+    n.forEach(items=>{
+        if(items % 2 ==0){
+            p.pares.push(items)
+        }
+        if (items % 2 != 0){
+            i.impares.push(items)
+        }
+    })
 
-//     console.log(p)
-//     console.log(i)
+    console.log(p)
+    console.log(i)
 
-// }
+}
 
 
 
-// obj([2,56,2,3,7,21,25,4,85,12,-24,2,90,-66])
+obj([2,56,2,3,7,21,25,4,85,12,-24,2,90,-66])
 
 
 
@@ -606,25 +606,25 @@ x
 
 
 
-    // const ad =(arr)=>{
-    //     arr1 =[...arr]
-    //     arr2 =[...arr]
+    const ad =(arr)=>{
+        arr1 =[...arr]
+        arr2 =[...arr]
 
-    //     x = {asc:[]}
-    //     y = {desc:[]}
-    //     x.asc  = arr1.sort((a,b)=> a-b);
-    //     y.desc = arr2.sort((a,b)=> b-a);
+        x = {asc:[]}
+        y = {desc:[]}
+        x.asc  = arr1.sort((a,b)=> a-b);
+        y.desc = arr2.sort((a,b)=> b-a);
 
-    //     console.log(x)
-    //     console.log(y)
-
-
+        console.log(x)
+        console.log(y)
 
 
-    // }
 
 
-    // ad([2,56,2,3,7,21,25,4,85,12,24,2,90,66])
+    }
+
+
+    ad([2,56,2,3,7,21,25,4,85,12,24,2,90,66])
 
 
 
@@ -671,33 +671,33 @@ x
 
 
     
-//     function masfrecunete(array) {
+    function masfrecunete(array) {
 
-//         const respuesta = array.reduce((obj, element) => {
-//             if (!obj[element]) {
-//                 obj[element] = 1;
-//             } else {
-//                 obj[element] = obj[element] + 1;
-//             }
+        const respuesta = array.reduce((obj, element) => {
+            if (!obj[element]) {
+                obj[element] = 1;
+            } else {
+                obj[element] = obj[element] + 1;
+            }
 
-//             return obj;
+            return obj;
 
-//         }, {})
+        }, {})
 
-//         console.info('respuesta', respuesta)
+        console.info('respuesta', respuesta)
 
 
-//         let = myArray = Object.entries(respuesta);
-//         console.info('respuesta depues de Objet.entire', myArray)
-//         let arrayfinal = []
+        let = myArray = Object.entries(respuesta);
+        console.info('respuesta depues de Objet.entire', myArray)
+        let arrayfinal = []
 
-//         myArray.forEach((elemento) => {
-//             arrayfinal.push(elemento[0])
-//         })
+        myArray.forEach((elemento) => {
+            arrayfinal.push(elemento[0])
+        })
 
-//         console.log(arrayfinal)
+        console.log(arrayfinal)
 
-//     }
+    }
 
 
 
@@ -739,19 +739,19 @@ x
 
 
 
-    // const prome =(n)=>{
-    //     let c = n.length
-    //     let suma = 0
-    //     n.forEach(items=>{
-    //          suma = suma + items
-    //     })
+    const prome =(n)=>{
+        let c = n.length
+        let suma = 0
+        n.forEach(items=>{
+             suma = suma + items
+        })
         
-    //     promedio = suma/c
+        promedio = suma/c
 
-    //     console.log(promedio)
+        console.log(promedio)
 
-    // }
+    }
 
 
-    // prome([9,8,7,6,5,4,3,2,1,0])
+    prome([9,8,7,6,5,4,3,2,1,0])
 
