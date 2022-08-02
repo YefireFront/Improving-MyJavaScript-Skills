@@ -3,7 +3,7 @@
 */
 
 
-/*
+
 
 function Team(nombre,apodo,estadio){
     this.nombre = nombre;
@@ -39,20 +39,20 @@ ArgentinaTeam.prototype.ubica = function(){
     console.log(`Los de ${this.nombre} Somos de la ciudad ${this.ciudad}`)
 }
 
-*/
 
 
-// const Boca = new Team("Boca Jrs","Xeneixe","La Mombonera")
-// const Racing = new Team("Racing","La Academia","Amalfitani")
-// const Inde = new ArgentinaTeam("Independinete","El rojo","LA caldera","Avellaneda")
 
-// console.log(Boca)
-// console.log(Racing)
-// console.log(Inde)
+const Boca = new Team("Boca Jrs","Xeneixe","La Mombonera")
+const Racing = new Team("Racing","La Academia","Amalfitani")
+const Inde = new ArgentinaTeam("Independinete","El rojo","LA caldera","Avellaneda")
 
-// Boca.canto()
-// Inde.canto()
-// Inde.ubica()
+console.log(Boca)
+console.log(Racing)
+console.log(Inde)
+
+Boca.canto()
+Inde.canto()
+Inde.ubica()
 
 
 
@@ -60,48 +60,48 @@ ArgentinaTeam.prototype.ubica = function(){
 
 // AZUCAR SINTATICAA  CLASES Y HERENCIA DE
 
-// class Team{
-//   //El contrecutoir es un metodo especial 
-//   //que se ejecuto en el momento de insytanciar la clase
-//     constructor(nombre,apodo,estadio){
-//         this.nombre = nombre;
-//         this.apodo = apodo;
-//         this.estadio = estadio;
-//     }
+class Team{
+  //El contrecutoir es un metodo especial 
+  //que se ejecuto en el momento de insytanciar la clase
+    constructor(nombre,apodo,estadio){
+        this.nombre = nombre;
+        this.apodo = apodo;
+        this.estadio = estadio;
+    }
 
-//     //metodo
-//     canto(nombre){
-//         console.log(`Los hinchas de ${this.nombre} cantamos siempre`)
-//     }
-// }
-
-
-// const boca = new Team("Boca Jrs","Xeneixe","Bombonera")
-
-// boca.canto()
+    //metodo
+    canto(nombre){
+        console.log(`Los hinchas de ${this.nombre} cantamos siempre`)
+    }
+}
 
 
-// class ArgentinaTeam extends Team{
-//     constructor(nombre,apodo,estadio,city){
-//         super(nombre,apodo,estadio)
-//         this.city = city;
-//     };
+const boca = new Team("Boca Jrs","Xeneixe","Bombonera")
 
-//     canto(nombre,city){
-//         console.log(`Los hinchas de ${this.nombre} cantamos siempre en la ciudad de ${city}`)
-//     }
+boca.canto()
 
-//     ubi(nombre,estadio){
-//         console.log(`${this.nombre} juega en el esatadio ${this.estadio}`)
-//     }
-// }
-// console.log(boca)
 
-// const Newlls = new ArgentinaTeam("Newwles","El pincha","Amalfinatni","Rosario" )
+class ArgentinaTeam extends Team{
+    constructor(nombre,apodo,estadio,city){
+        super(nombre,apodo,estadio)
+        this.city = city;
+    };
 
-// console.log(Newlls)
-// Newlls.canto()
-// Newlls.ubi()
+    canto(nombre,city){
+        console.log(`Los hinchas de ${this.nombre} cantamos siempre en la ciudad de ${city}`)
+    }
+
+    ubi(nombre,estadio){
+        console.log(`${this.nombre} juega en el esatadio ${this.estadio}`)
+    }
+}
+console.log(boca)
+
+const Newlls = new ArgentinaTeam("Newwles","El pincha","Amalfinatni","Rosario" )
+
+console.log(Newlls)
+Newlls.canto()
+Newlls.ubi()
 
 
 
@@ -127,25 +127,25 @@ ArgentinaTeam.prototype.ubica = function(){
 
 
 //OBJETO LITERAAAL
-// const boca = {
-//     nombre : "Boca",
-//     ciudad : "buenos aires",
-//     titulos : [
-//         "Libertadores del 2003",
-//         "Libertadores del 2005",
-//         "Libertadores del 2006",
-//     ],
+const xeneixe = {
+    nombre : "Boca",
+    ciudad : "buenos aires",
+    titulos : [
+        "Libertadores del 2003",
+        "Libertadores del 2005",
+        "Libertadores del 2006",
+    ],
 
-//     nuevoTitulo(titulo){
+    nuevoTitulo(titulo){
 
-//         this.titulos.push(titulo)
-//     }
-// }
+        this.titulos.push(titulo)
+    }
+}
 
-//  //Hacer que cante
-// boca.titulos.push("Libertadores del 2008")
-// boca.nuevoTitulo("Libertadores del 2010")
-// console.log(boca)
+ //Hacer que cante
+xeneixe.titulos.push("Libertadores del 2008")
+xeneixe.nuevoTitulo("Libertadores del 2010")
+console.log(xeneixe)
 
 
  
@@ -153,15 +153,15 @@ ArgentinaTeam.prototype.ubica = function(){
 
 // CREAR NUESTRO prottotipo
 
-// function Team(nombre,ciudad, titulo){
-//     this.nombre= nombre;
-//     this.ciudad= ciudad;
-//     this.titulo = titulo
-// }
+function Team(nombre,ciudad, titulo){
+    this.nombre= nombre;
+    this.ciudad= ciudad;
+    this.titulo = titulo
+}
 
-// Team.prototype.nuevotitulo = function(galardon) {
-//     this.titulo.push(galardon)
-// }
+Team.prototype.nuevotitulo = function(galardon) {
+    this.titulo.push(galardon)
+}
 
 // const Boca = new Team("Boquita","Buenos Aires",[])
 
@@ -179,21 +179,21 @@ ArgentinaTeam.prototype.ubica = function(){
 
 //PROTOTIPO CON LA SINTAXYS DE CLASES
 
-// class Team{
-//     constructor(nombre,ciudad, titulo){
-//         this.nombre= nombre;
-//         this.ciudad= ciudad;
-//         this.titulo = titulo
+class Team{
+    constructor(nombre,ciudad, titulo){
+        this.nombre= nombre;
+        this.ciudad= ciudad;
+        this.titulo = titulo
 
-//     }
+    }
 
-//     nuevotitulo(galardon) {
-//         this.titulo.push(galardon)
-//     }
+    nuevotitulo(galardon) {
+        this.titulo.push(galardon)
+    }
 
-// }
+}
 
-// const Boca = new Team("Boquita","Buenos Aires",[])
+const Boca1 = new Team("Boquita","Buenos Aires",[])
 
 
 
@@ -211,31 +211,31 @@ ArgentinaTeam.prototype.ubica = function(){
 // RECIBIR OBJETO COMO PARAMETRO
 
 
-// class Team{
-//     constructor({
-//         nombre,
-//         ciudad ="Alguna de Argentina", 
-//         titulo 
-//     }){
+class Team{
+    constructor({
+        nombre,
+        ciudad ="Alguna de Argentina", 
+        titulo 
+    }){
 
-//         this.nombre= nombre;
-//         this.ciudad= ciudad;
-//         this.titulo = titulo
+        this.nombre= nombre;
+        this.ciudad= ciudad;
+        this.titulo = titulo
 
-//     }
+    }
 
-//     nuevotitulo(galardon) {
-//         this.titulo.push(galardon)
-//     }
+    nuevotitulo(galardon) {
+        this.titulo.push(galardon)
+    }
 
-// }
+}
 
-// const Boca = new Team({
-//     nombre:"Boca",
-//     titulo: 5,
-//     ciudad:"Carta "
+const Boca2 = new Team({
+    nombre:"Boca",
+    titulo: 5,
+    ciudad:"Carta "
 
-// })
+})
 
 
 
@@ -252,107 +252,107 @@ ArgentinaTeam.prototype.ubica = function(){
 //
 
 
-// class Team {
-//     constructor({
-//         nombre,
-//         ciudad,
-//         conferecnia,
-//         estadio
+class Team {
+    constructor({
+        nombre,
+        ciudad,
+        conferecnia,
+        estadio
 
-//     }){
-//         this.nombre = nombre;
-//         this.ciudad = ciudad;
-//         this._estadio = estadio;
-//         this._conferecnia = conferecnia;
-//     }
+    }){
+        this.nombre = nombre;
+        this.ciudad = ciudad;
+        this._estadio = estadio;
+        this._conferecnia = conferecnia;
+    }
 
-//     get estadio() { return this._estadio; }
+    get estadio() { return this._estadio; }
 
-//     set estadio(ne){
-//         if(ne === "bom"){
-//             console.error("SOY de RIBEr PUTOO")
-//         }else{
-//             this._estadio = ne
-//         }
-//     }
-// }
+    set estadio(ne){
+        if(ne === "bom"){
+            console.error("SOY de RIBEr PUTOO")
+        }else{
+            this._estadio = ne
+        }
+    }
+}
 
-// const bulls = new Team({
-//         nombre:"Buls",
-//         ciudad : "Chicago",
-//         conferecnia :"Oeste",
-//         estadio : "Stuar Grand"
-// })
-// const celtic = new Team({
-//         nombre:"Celtic",
-//         ciudad : "Boston",
-//         conferecnia :"Oeste",
-//         estadio : "Trebol Stadium"
-// })
-// const lakers = new Team({
-//         nombre:"Lakers",
-//         ciudad : "LA - Los angeles",
-//         conferecnia :"Este",
-//         estadio : "Stuard Magical Grand"
-// })
-
-
-
-
-// class Jugador{
-//     constructor({
-//         nombre,
-//         apodo   = nombre,
-//         equipo =[],
-//         titulos = [],
-//         allstart = [],
-//         totalpuntos = 0,
-//         totalrebotes = 0,
-//         totalasistencias = 0,
-
-
-//     }){
-//         this.nombre  = nombre;
-//         this.equipo  = equipo;
-//         this.apodo   = apodo ;
-//         this.titulos = titulos;
-//         this.allstart= allstart;
-//         this.averags = {
-//             totalasistencias,
-//             totalrebotes,
-//             totalpuntos
-//         };
-
-//     }
-// }
-
-// const jordan = new Jugador ({ 
-//         nombre : "Michael jordan",
-//         equipo : [bulls,celtic],
-//         apodo : "GOAT",
-//         titulos : ["95s","96s"],
-//         allstart :["Cleveland 1995","Orlando 2001","Los angeles 2005"],
-//         totalpuntos : 22510,
-//         totalrebotes : 856,
-//         totalasistencias : 1862,
-// })
+const bulls = new Team({
+        nombre:"Buls",
+        ciudad : "Chicago",
+        conferecnia :"Oeste",
+        estadio : "Stuar Grand"
+})
+const celtic = new Team({
+        nombre:"Celtic",
+        ciudad : "Boston",
+        conferecnia :"Oeste",
+        estadio : "Trebol Stadium"
+})
+const lakers = new Team({
+        nombre:"Lakers",
+        ciudad : "LA - Los angeles",
+        conferecnia :"Este",
+        estadio : "Stuard Magical Grand"
+})
 
 
 
-// class SoccerPlayer extends Jugador {
-//     constructor(props){
-//         super(props);
-//     }
-// }
 
-// class BasketPlayer extends Jugador {
-//     constructor(props){
-//         super(props);
-//     }
-// }
+class Jugador{
+    constructor({
+        nombre,
+        apodo   = nombre,
+        equipo =[],
+        titulos = [],
+        allstart = [],
+        totalpuntos = 0,
+        totalrebotes = 0,
+        totalasistencias = 0,
 
 
-// console.log(jordan);
+    }){
+        this.nombre  = nombre;
+        this.equipo  = equipo;
+        this.apodo   = apodo ;
+        this.titulos = titulos;
+        this.allstart= allstart;
+        this.averags = {
+            totalasistencias,
+            totalrebotes,
+            totalpuntos
+        };
+
+    }
+}
+
+const jordan = new Jugador ({ 
+        nombre : "Michael jordan",
+        equipo : [bulls,celtic],
+        apodo : "GOAT",
+        titulos : ["95s","96s"],
+        allstart :["Cleveland 1995","Orlando 2001","Los angeles 2005"],
+        totalpuntos : 22510,
+        totalrebotes : 856,
+        totalasistencias : 1862,
+})
+
+
+
+class SoccerPlayer extends Jugador {
+    constructor(props){
+        super(props);
+    }
+}
+
+class BasketPlayer extends Jugador {
+    constructor(props){
+        super(props);
+    }
+}
+
+
+console.log(jordan);
 
 
 
