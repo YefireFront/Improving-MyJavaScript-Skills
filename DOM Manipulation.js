@@ -1,4 +1,5 @@
-let hello = "Hello bacho";
+let hello = document.images;
+console.log(hello)
 
-console.log(hello);
-console.log(document.)
+const who = document.querySelectorAll('ul')
+console.log(who.children)
